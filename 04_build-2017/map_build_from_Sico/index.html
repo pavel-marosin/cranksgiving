@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport"></meta>
+<title>Cranksgiving-Other Cranksgivings 2014 - Google Fusion Tables</title>
+<style type="text/css">
+html, body, #googft-mapCanvas {
+	height: 500px;
+	margin: 0;
+	padding: 0;
+	width: 800px;
+}
+</style>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" ></script>
+<script type="text/javascript" src="https://maps.google.com/maps/api/js?sensor=false&amp;v=3"></script>
+<script src="js/crankmap.js"></script>
+</head>
+
+<body>
+	<ul>
+		<li><a href="#" class="list-link">List View</a></li>
+		<li><a href="#" class="map-link">Map View</a></li>
+	</ul>
+	<div id="googft-mapCanvas"  style="display: none;"></div>
+	<div id="location-list"></div>
+	<script>
+		$(document).ready(function() { CRANK.map.init(); });
+	</script>
+</body>
+</html>
